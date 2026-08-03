@@ -15,7 +15,7 @@
 | M2 | YOLO 全流程闭环 | ✅ 完成 2026-08-03 | | `references/m2-验收记录.md` | `yolo-visdrone` |
 | M3 | VLA 核心动手 | ⬜ 未开始 | | | `vla-starvla-study` |
 | M4 | ROS2 + 仿真小车 | ⬜ 未开始 | | | `robot-sim-stack` |
-| M5 | SLAM + 路径规划 | ⬜ 未开始 | | | `path-planning` |
+| M5 | SLAM + 路径规划 | 🔄 进行中 2026-08-03 | | `references/m5-作品集方案.md` | `path-planning` |
 | M6 | 控制层对接 | ⬜ 未开始 | | | `control-deploy` |
 | M7 | 无人机（支线） | ⬜ 未开始 | | | `px4-sim` |
 | M8 | 端到端集成 | ⬜ 未开始 | | | `e2e-demo` |
@@ -39,6 +39,8 @@
 | 1C | 2026-08-01 | M1 Capstone 完成：MiniTorch 纯NumPy框架，CIFAR-10 48.8% | `minitorch` 框架500行，算子5/5对照测试，im2col优化，教学文档4篇 |
 | 2 | 2026-08-03 | M2 完成：VisDrone YOLO26s (mAP50 0.382) + SAHI +27% + 钢珠(mAP50 0.93) + 部署(ONNX/WebUI/95fps) | `yolo-visdrone` 51提交推送GitHub；知识体系9篇；评估方法论落盘 |
 | 2 | 2026-08-03 | M1+M2 规范化：技术文档+成果图+git初始化，5仓库公开推送 | 方案B（导航+独立仓库）；ViT衔接文档补全规划缺口 |
+| 2 | 2026-08-03 | M5 启动：调研确认方案（LaValle/2024综述/Nav2/MATLAB角色）| 手写A*/RRT*/DWA + MATLAB对比 + 知识体系6篇 |
+| 2 | 2026-08-03 | M5 巡检导航：TurtleBot3+Nav2装好，SLAM建图流程跑通 | WSL的Gazebo/DDS问题待Ubuntu原生环境解决 |
 
 ## M0 验收记录
 

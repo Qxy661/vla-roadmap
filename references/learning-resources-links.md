@@ -70,9 +70,47 @@
 | [MATLAB Robotics Toolbox](https://www.mathworks.com/help/robotics/) | 官方（plannerAStar等）|
 | [Peter Corke Robotics Toolbox](https://github.com/petercorke/robotics-toolbox-matlab) | 经典机器人工具箱 |
 
-## 五、学习方法建议
+## 五、前沿资源（2025-2026 调研补充）
+
+### VLA（M3）
+| 资源 | 亮点 |
+|---|---|
+| [VLM4VLA（ICLR 2026）](https://arxiv.org/abs/2601.03309) | VLM 选择研究：小模型可胜大模型 |
+| [Efficient-VLAs-Survey](https://github.com/YuZhaoshu/Efficient-VLAs-Survey) | 轻量化 VLA 综述 |
+| [APT 动作专家预训练](https://github.com/xukechun/APT) | 提升指令泛化 |
+| [SmolVLA / OpenVLA / TinyVLA](https://huggingface.co/) | 轻量 VLA 模型 |
+
+### 小目标检测（M2）
+| 资源 | 亮点 |
+|---|---|
+| [2023-2025 SOD 综述](https://www.scilit.com/publications/6b9cccef84158a42ac0a2f84c80cb368) | 全面综述 |
+| [MSFE 无需训练增强](https://scite.ai/) | 优于 SAHI，YOLO11 +26.5% |
+| [P2 头 + SAHI 海上检测](https://scite.ai/reports/enhanced-object-detection-in-maritime-4LAKxyN3) | P2 头小目标 +7.6% |
+
+### 路径规划（M5）
+| 资源 | 亮点 |
+|---|---|
+| [Path-Planning 开源全套](https://github.com/DadaNanjesha/Path-Planning-for-Intelligent-Mobile-Robots) | A*/D*/RRT*/DQN-A* |
+| [ERRT 学习式RRT](https://xinyuwuu.github.io/Episodic_RRT/) | 98% 成功率，107×快 |
+| [RRT*former](https://github.com/fengmingyang666/RRTformer) | Transformer 引导采样 |
+
+### 控制（M6）
+| 资源 | 亮点 |
+|---|---|
+| [ros2_control 教程](https://aleksandarhaber.com/ros2-jazzy-tutorial-basics-of-ros2_control-library/) | PID/轨迹控制 |
+| [svplan（ICRA 2025 MPC）](https://github.com/ccwss-maker/svplan) | MPC 轨迹跟踪 |
+| [MAVES 仿真](https://roam-lab.github.io//projects/mavs/) | PID/LQR/MPC |
+
+### PCB
+| 资源 | 亮点 |
+|---|---|
+| [SiliconWit pcb-design-kicad](https://github.com/SiliconWit/pcb-design-kicad) | 9 课 9 板（极佳路径）|
+| [嵌入式 Roadmap（8.1k star）](https://www.xiaohongshu.com/discovery/item/68f76285000000000302c197) | 软硬件路线 |
+
+## 六、学习方法建议
 
 1. **M1**：先看 3Blue1Brown 理解概念，再对照本项目 micrograd 思路
-2. **M2**：Ultralytics 文档 + 本项目闭环，看 SAHI 源码
+2. **M2**：Ultralytics 文档 + 本项目闭环，看 SAHI/P2 头源码
 3. **M5**：LaValle 书 + PythonRobotics 代码 + 本项目算法库对比
 4. **MATLAB**：Robotics Toolbox 官方例子 + 本项目 astar_matlab.m
+5. **前沿**：定期看 VLM4VLA/ERRT/RRT*former 等（跟上前沿）

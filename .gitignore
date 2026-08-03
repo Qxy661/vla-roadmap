@@ -6,6 +6,7 @@ dl-hands-on/
 minitorch/
 binary-classifier/
 yolo-visdrone/
+path-planning/
 taffy_check/
 
 # M2 工作临时文件

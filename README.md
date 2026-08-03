@@ -2,82 +2,67 @@
 
 > **目标**：成为"从感知到执行"全流程动手能力的机器人工程师。
 > **主线**：移动机器人（履带车/无人机）+ VLA 作为高层决策大脑。
-> **起点**：2026-08-01 定案，持续迭代中。
-
-> 这是一个**完整的学习路径作品集**——不是零散 demo，
-> 而是从深度学习原理 → YOLO 应用 → VLA 决策 → 机器人执行的系统化学习记录。
-> 每个模块是独立仓库，本仓库是**导航总览**。
+> **理念**：每个项目 = **知识概念** + **全流程闭环落地能力** + **精选高设计度复杂项目**。
 
 ---
 
-## 🗺️ 学习路径全景
+## 🎯 作品集理念
 
 ```
-从感知到执行：
-深度学习 → 视觉检测 → 视觉-语言-动作 → 机器人执行
-  M1        M2           M3            M4-M8
-
-每个模块 = 能力目标 + 实操项目 + 验收标准
+不是零散 demo，而是系统化的能力证明：
+知识概念(懂原理) + 闭环能力(会落地) + 复杂项目(能设计)
 ```
 
-## 📂 模块仓库导航
+**三维度贯穿每个项目**：
+- **知识概念**：教学文档讲透原理（不是黑盒使用）
+- **闭环能力**：完整流程跑通（数据→训练→评估→部署 / 算法→体系→应用）
+- **复杂项目**：精选有设计深度的完整项目（不是玩具 demo）
 
-| 模块 | 内容 | 状态 | 仓库 |
-|---|---|---|---|
-| M0 | 环境与基建（WSL2/conda/CUDA）| ✅ 完成 | — |
-| **M1** | 深度学习核心 | ✅ 完成 | [dl-hands-on](https://github.com/Qxy661/dl-hands-on) |
-| M1C | Capstone: MiniTorch 框架 | ✅ 完成 | [minitorch](https://github.com/Qxy661/minitorch) |
-| M1C2 | 二分类趣味项目 | ✅ 完成 | [binary-classifier](https://github.com/Qxy661/binary-classifier) |
-| **M2** | YOLO 全流程闭环 | 🔄 进行中 | [yolo-visdrone](https://github.com/Qxy661/yolo-visdrone) |
-| M3 | VLA 核心动手 | ⏳ 规划中 | — |
-| M4-M8 | ROS2 / SLAM / 控制 / 集成 | ⏳ 待做 | — |
+## 📂 项目总览（概念 + 闭环 + 落地）
 
-## ✅ 已完成的成果亮点
+| 模块 | 项目 | 知识概念 | 闭环能力 | 精选项目成果 |
+|---|---|---|---|---|
+| **M1 深度学习** | [dl-hands-on](https://github.com/Qxy661/dl-hands-on) | 6章教程（反向传播/CNN）| 手写→PyTorch→CIFAR | **CIFAR-10 80.5%** |
+| M1C | [minitorch](https://github.com/Qxy661/minitorch) | 4章框架设计 | 算子→训练 | **纯NumPy框架 48.8%** |
+| M1C2 | [binary-classifier](https://github.com/Qxy661/binary-classifier) | 5章二分类原理 | 数据→训练→预测 | **迁移学习 100%** |
+| **M2 YOLO** | [yolo-visdrone](https://github.com/Qxy661/yolo-visdrone) | 9篇知识体系 | 数据→训练→评估→部署 | **VisDrone 0.38 + 钢珠 0.93 + WebUI** |
+| **M5 路径规划** | [path-planning](https://github.com/Qxy661/path-planning) | 6篇（算法→体系→应用）| 算法→MATLAB→Nav2 | **手写A*/RRT*/DWA + 巡检导航** |
+| M6+ 硬件 | PCB 分支（规划）| 原理/封装知识 | 原理图→布局→打样 | 小车控制板/飞控板 |
 
-### M1 深度学习核心（dl-hands-on）
-- **手写反向传播引擎 + MLP**：从零实现自动微分
-- **PyTorch CNN**：CIFAR-10 达到 **80.5%**
-- 双验证：PyTorch 对照 + 数值梯度
+## 🏆 精选复杂项目（高设计度）
 
-### M1C MiniTorch（minitorch）
-- **纯 NumPy 深度学习框架**（约 500 行）
-- 实现 MLP/Conv2D 等算子，CIFAR-10 **48.8%**
-- im2col 优化，算子 5/5 对照测试
+| 项目 | 技术亮点 | 复杂度 |
+|---|---|---|
+| **钢珠检测分支**（M2）| 检测+测量+反光特征+WebUI 多技术融合 | ★★★ |
+| **MiniTorch 框架**（M1C）| 700行纯NumPy 从零实现深度学习框架 | ★★★★ |
+| **路径规划算法库**（M5）| A*/RRT*/DWA + MATLAB 三实现对比 | ★★★ |
+| **巡检机器人**（M5 规划中）| 手写算法 + Nav2 完整导航闭环 | ★★★★ |
+| **小车控制板**（PCB 规划中）| 硬件落地，STM32+电机驱动 | ★★★ |
 
-### M1C2 二分类项目（binary-classifier）
-- 迁移学习微调，猫狗分类 **89.5%**
-- 趣味扩展：奶龙 vs 塔菲 **100%**
-
-### M2 YOLO 全流程闭环（yolo-visdrone）🔄
-- VisDrone 小目标检测，YOLO26 **mAP@0.5 0.50+**
-- 完整闭环：数据→训练→评估→部署
-- 钢珠检测独立分支（1943张数据 + 直径测量 + 反光特征）
-
-## 📚 文档
+## 📚 文档导航
 
 | 文件 | 内容 |
 |---|---|
-| [PLAN.md](PLAN.md) | 完整模块化计划（模块 0–8 详细卡片）|
-| [PROGRESS.md](PROGRESS.md) | 进度追踪（每模块完成状态）|
-| [HARDWARE.md](HARDWARE.md) | 硬件配置备忘 |
-| [references/](references/) | 每模块技术笔记 |
-| [记忆档案.md](记忆档案.md) | 跨会话学习记忆（可靠持久版）|
+| [PLAN.md](PLAN.md) | 完整模块化计划（模块 0-8）|
+| [PROGRESS.md](PROGRESS.md) | 进度追踪（每模块状态）|
+| [作品集结构](references/portfolio-structure.md) | 作品集整体方案 |
+| [PCB 全景蓝图](references/m5-pcb全景蓝图.md) | 硬件分支规划 |
+| [记忆档案](记忆档案.md) | 跨会话学习记忆 |
 
 ## 🎯 里程碑
 
-- [x] M1 深度学习核心（手写引擎 + CNN 80.5%）
-- [x] M1C MiniTorch 框架（纯NumPy 48.8%）
-- [x] M1C2 二分类（迁移学习 89.5%）
-- [ ] M2 YOLO 全流程闭环（进行中）
-- [ ] M3 VLA 微调跑通 LIBERO
-- [ ] M5 仿真小车自主导航
-- [ ] M8 语言指令 → 端到端执行
+- [x] **M1 深度学习核心**（手写引擎 + CNN 80.5%）
+- [x] **M2 YOLO 全流程闭环**（数据→部署，钢珠 0.93）
+- [ ] **M5 路径规划**（进行中：算法库+知识体系完成，导航闭环 Ubuntu 完善）
+- [ ] **M6 控制 + PCB 硬件**（控制板落地）
+- [ ] **M8 端到端**（语言指令 → 全自动执行）
 
 ## 🔧 环境
 
 - 硬件：RTX 4060 8GB / 32GB RAM
-- 软件：WSL2 Ubuntu + conda(dl) + PyTorch 2.6 + CUDA
+- 软件：WSL2 Ubuntu + ROS2 Humble + PyTorch + MATLAB R2024a
+- 双系统：Ubuntu（原生跑 Gazebo 导航更稳）
 
 ---
 
-*这是一条持续生长的路径。每个模块都是一块独立的砖，最终砌成"从感知到执行"的完整能力。*
+*从感知到执行，从软件到硬件——完整的机器人工程师能力体系。*

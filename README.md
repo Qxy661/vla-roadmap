@@ -27,6 +27,7 @@
 | M1C2 | [binary-classifier](https://github.com/Qxy661/binary-classifier) | 5章二分类原理 | 数据→训练→预测 | **迁移学习 100%** |
 | **M2 YOLO** | [yolo-visdrone](https://github.com/Qxy661/yolo-visdrone) | 9篇知识体系 | 数据→训练→评估→部署 | **VisDrone 0.38 + 钢珠 0.93 + WebUI** |
 | **M5 路径规划** | [path-planning](https://github.com/Qxy661/path-planning) | 6篇（算法→体系→应用）| 算法→MATLAB→Nav2 | **手写A*/RRT*/DWA + 巡检导航** |
+| **M3 VLA** | [vla-starvla-study](https://github.com/Qxy661/vla-starvla-study) | 6篇（VLA原理）| 加载→推理→微调→评估 | **Qwen3-VL + starVLA 实操** |
 | M6+ 硬件 | PCB 分支（规划）| 原理/封装知识 | 原理图→布局→打样 | 小车控制板/飞控板 |
 
 ## 🏆 精选复杂项目（高设计度）

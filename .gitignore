@@ -1,0 +1,19 @@
+# vla-roadmap 导航仓库 .gitignore
+# 子项目是独立 git 仓库（方案B），不在此嵌套追踪
+
+# 独立项目目录
+dl-hands-on/
+minitorch/
+binary-classifier/
+yolo-visdrone/
+taffy_check/
+
+# M2 工作临时文件
+README_yolo.md
+sahi_eval_new.py
+steelball.yaml
+gpu_smoke_test.py
+
+# Python
+__pycache__/
+*.pyc

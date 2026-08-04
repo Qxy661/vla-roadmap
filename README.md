@@ -6,64 +6,58 @@
 
 ---
 
-## 🎯 作品集理念
+## 🎯 核心叙事：从感知到执行
 
 ```
-不是零散 demo，而是系统化的能力证明：
-知识概念(懂原理) + 闭环能力(会落地) + 复杂项目(能设计)
+深度学习(M1) → 检测(M2) → 规划(M5) → 控制(micro-ROS) → 硬件落地(PCB/实机)
+  看懂         找目标      会导航      会执行          真实机器人
 ```
 
-**三维度贯穿每个项目**：
-- **知识概念**：教学文档讲透原理（不是黑盒使用）
-- **闭环能力**：完整流程跑通（数据→训练→评估→部署 / 算法→体系→应用）
-- **复杂项目**：精选有设计深度的完整项目（不是玩具 demo）
+**完整机器人能力链**——每个项目是链上的一环，实机小车是集大成者。
 
-## 📂 项目总览（概念 + 闭环 + 落地）
+## 📂 项目总览（从感知到执行）
 
-| 模块 | 项目 | 知识概念 | 闭环能力 | 精选项目成果 |
-|---|---|---|---|---|
-| **M1 深度学习** | [dl-hands-on](https://github.com/Qxy661/dl-hands-on) | 6章教程（反向传播/CNN）| 手写→PyTorch→CIFAR | **CIFAR-10 80.5%** |
-| M1C | [minitorch](https://github.com/Qxy661/minitorch) | 4章框架设计 | 算子→训练 | **纯NumPy框架 48.8%** |
-| M1C2 | [binary-classifier](https://github.com/Qxy661/binary-classifier) | 5章二分类原理 | 数据→训练→预测 | **迁移学习 100%** |
-| **M2 YOLO** | [yolo-applications](https://github.com/Qxy661/yolo-applications) | 9篇知识体系 | 数据→训练→评估→部署 | **VisDrone 0.38 + 钢珠 0.93 + WebUI** |
-| **M5 路径规划** | [path-planning](https://github.com/Qxy661/path-planning) | 6篇（算法→体系→应用）| 算法→MATLAB→Nav2 | **手写A*/RRT*/DWA + 巡检导航** |
-| **M3 VLA** | [vla-starvla-study](https://github.com/Qxy661/vla-starvla-study) | 6篇（VLA原理）| 加载→推理→微调→评估 | **Qwen3-VL + starVLA 实操** |
-| M6+ 硬件 | [pcb-design](https://github.com/Qxy661/pcb-design) | 5篇（EDA/原理图/布局/生产）| 原理图→布局→打样 | 小车控制板/飞控板 |
+| 环节 | 项目 | 核心成果 | 状态 |
+|---|---|---|---|
+| **感知-学习** | [dl-hands-on](https://github.com/Qxy661/dl-hands-on) | 手写引擎→CIFAR-10 **80.5%** | ✅ |
+| 感知-框架 | [minitorch](https://github.com/Qxy661/minitorch) | 纯NumPy框架 **48.8%** | ✅ |
+| 感知-分类 | [binary-classifier](https://github.com/Qxy661/binary-classifier) | 迁移学习 **100%** | ✅ |
+| **感知-检测** | [yolo-applications](https://github.com/Qxy661/yolo-applications) | VisDrone 0.38 + 钢珠 0.93 | ✅ |
+| **规划-路径** | [path-planning](https://github.com/Qxy661/path-planning) | 手写A*/RRT*/DWA + Nav2 | 🔄 |
+| **决策-VLA** | [vla-starvla-study](https://github.com/Qxy661/vla-starvla-study) | Qwen3-VL + starVLA | ⏳ |
+| **硬件-PCB** | [pcb-design](https://github.com/Qxy661/pcb-design) | 从零到控制板/飞控板 | ⏳ |
+| **🤖 实机核心** | [robot-real](https://github.com/Qxy661/robot-real) | LEAP小车：建图/导航/视觉/三任务 | 🔄 |
 
 ## 🏆 精选复杂项目（高设计度）
 
 | 项目 | 技术亮点 | 复杂度 |
 |---|---|---|
-| **钢珠检测分支**（M2）| 检测+测量+反光特征+WebUI 多技术融合 | ★★★ |
-| **MiniTorch 框架**（M1C）| 700行纯NumPy 从零实现深度学习框架 | ★★★★ |
-| **路径规划算法库**（M5）| A*/RRT*/DWA + MATLAB 三实现对比 | ★★★ |
-| **巡检机器人**（M5 规划中）| 手写算法 + Nav2 完整导航闭环 | ★★★★ |
-| **小车控制板**（PCB 规划中）| 硬件落地，STM32+电机驱动 | ★★★ |
+| **实机小车**（robot-real）| LEAP ROS2 + micro-ROS + 建图导航 + 三任务 | ★★★★★ |
+| **MiniTorch 框架**（M1C）| 700行纯NumPy 从零实现 | ★★★★ |
+| **钢珠检测分支**（M2）| 检测+测量+反光特征+WebUI | ★★★ |
+| **路径规划算法库**（M5）| A*/RRT*/DWA + MATLAB 对比 | ★★★ |
 
 ## 📚 文档导航
 
 | 文件 | 内容 |
 |---|---|
 | [作品集结构](references/portfolio-structure.md) | 作品集整体方案 |
-| [PCB 全景蓝图](references/m5-pcb全景蓝图.md) | 硬件分支规划 |
-| [PCB 精选项目](references/m5-pcb精选项目方案.md) | 精选项目与闭环 |
-| [PCB 全流程](references/pcb-全流程执行方案.md) | 实施计划 |
+| [路径规划知识图谱](references/m5-路径规划知识图谱.md) | 知识框架 |
 | [学习资源](references/learning-resources-links.md) | 各模块学习链接 |
-| [作品集方案](references/m5-作品集方案.md) | M5 方案 |
-| [路径规划知识图谱](references/m5-路径规划知识图谱.md) | M5 知识框架 |
 
 ## 🎯 里程碑
 
 - [x] **M1 深度学习核心**（手写引擎 + CNN 80.5%）
 - [x] **M2 YOLO 全流程闭环**（数据→部署，钢珠 0.93）
-- [ ] **M5 路径规划**（进行中：算法库+知识体系完成，导航闭环 Ubuntu 完善）
-- [ ] **M6 控制 + PCB 硬件**（控制板落地）
+- [ ] **M5 路径规划**（算法库完成，导航闭环推进中）
+- [ ] **实机小车**（建图导航 → 三任务）
 - [ ] **M8 端到端**（语言指令 → 全自动执行）
 
 ## 🔧 环境
 
 - 硬件：NVIDIA GPU（8GB）+ 32GB RAM
 - 软件：Ubuntu + ROS2 Humble + PyTorch + MATLAB
+- 实机：LEAP ROS2 小车（ESP32-S3 + 激光雷达）
 
 ---
 

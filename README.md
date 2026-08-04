@@ -44,11 +44,13 @@
 
 | 文件 | 内容 |
 |---|---|
-| [PLAN.md](PLAN.md) | 完整模块化计划（模块 0-8）|
-| [PROGRESS.md](PROGRESS.md) | 进度追踪（每模块状态）|
 | [作品集结构](references/portfolio-structure.md) | 作品集整体方案 |
 | [PCB 全景蓝图](references/m5-pcb全景蓝图.md) | 硬件分支规划 |
-| [记忆档案](记忆档案.md) | 跨会话学习记忆 |
+| [PCB 精选项目](references/m5-pcb精选项目方案.md) | 精选项目与闭环 |
+| [PCB 全流程](references/pcb-全流程执行方案.md) | 实施计划 |
+| [学习资源](references/learning-resources-links.md) | 各模块学习链接 |
+| [作品集方案](references/m5-作品集方案.md) | M5 方案 |
+| [路径规划知识图谱](references/m5-路径规划知识图谱.md) | M5 知识框架 |
 
 ## 🎯 里程碑
 
@@ -60,9 +62,8 @@
 
 ## 🔧 环境
 
-- 硬件：RTX 4060 8GB / 32GB RAM
-- 软件：WSL2 Ubuntu + ROS2 Humble + PyTorch + MATLAB R2024a
-- 双系统：Ubuntu（原生跑 Gazebo 导航更稳）
+- 硬件：NVIDIA GPU（8GB）+ 32GB RAM
+- 软件：Ubuntu + ROS2 Humble + PyTorch + MATLAB
 
 ---
 

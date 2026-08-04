@@ -22,3 +22,5 @@ vla-starvla-study/
 # Python
 __pycache__/
 *.pyc
+robot-real/
+记忆档案.md

@@ -20,7 +20,7 @@
 | 环节 | 项目 | 核心成果 | 状态 |
 |---|---|---|---|
 | **感知-学习** | [dl-hands-on](https://github.com/Qxy661/dl-hands-on) | 手写引擎→CIFAR-10 **80.5%** | ✅ |
-| 感知-框架 | [minitorch](https://github.com/Qxy661/minitorch) | 纯NumPy框架 **48.8%** | ✅ |
+| 感知-框架 | [minitorch](https://github.com/Qxy661/minitorch) | 纯NumPy框架 **78.1%**（对标PyTorch 80.5%）| ✅ |
 | 感知-分类 | [binary-classifier](https://github.com/Qxy661/binary-classifier) | 迁移学习 **100%** | ✅ |
 | **感知-检测** | [yolo-applications](https://github.com/Qxy661/yolo-applications) | VisDrone 0.38 + 钢珠 0.93 | ✅ |
 | **规划-路径** | [path-planning](https://github.com/Qxy661/path-planning) | 手写A*/RRT*/DWA + Nav2 | 🔄 |
@@ -33,7 +33,7 @@
 | 项目 | 技术亮点 | 复杂度 |
 |---|---|---|
 | **实机小车**（robot-real）| LEAP ROS2 + micro-ROS + 建图导航 + 三任务 | ★★★★★ |
-| **MiniTorch 框架**（M1C）| 700行纯NumPy 从零实现 | ★★★★ |
+| **MiniTorch 框架**（M1C）| 700行纯NumPy + 全参CNN 78.1%（对标PyTorch）+ ResNet残差 | ★★★★★ |
 | **钢珠检测分支**（M2）| 检测+测量+反光特征+WebUI | ★★★ |
 | **路径规划算法库**（M5）| A*/RRT*/DWA + MATLAB 对比 | ★★★ |
 
